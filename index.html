@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SavoryBites! Find Delicious Recipes</title>
+  <meta name="keywords" content="SavoryBites, Meal App, recipe">
+  <meta name="author" content="Piyush Singh">
+  
+
+  <script src="https://kit.fontawesome.com/14097a442a.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class= "container-box">
+  <!-- Navigation Bar Section -->
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="assets/logo.png" alt="Logo" width="80" height="40" class="d-inline-block">
+            <span class="navbar-brand-name"> SavoryBites </span>
+          </a>
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a  id="fav" href="favourite.html" onclick="showFavMeals()"  style="text-decoration: none;"><i class="fa-solid fa-heart"></i><span class="nav-fav-back-btn"> Favorite </span> </a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+  <!-- Search Bar Section -->
+    <div class = "meal-wrapper ">
+      <div class = "meal-search">
+        <h2 class = "title">Find Your Delicious Meals Here</h2>
+        <blockquote>Real food doesn't have ingredients, real food is ingredients.<br>
+          <cite>- Jamie Oliver</cite>
+        </blockquote>
+
+        <form id="search-form" class=" meal-search-box">
+          <input type="text" id="keyword" class=" search-control" placeholder="Search.." />
+          <button type="submit" class="search-btn" ><i class="fa fa-search" style="color: aliceblue;"></i></button>
+        </form>
+      </div>
+
+      <!-- Heading of search result Section -->
+      <div>
+         <h2 class="title">Your Search Results:</h2>
+      </div>
+    </div>
+
+  <!-- Main Recipe Search Result Container Section, Which will Update According to Search Result-->
+        <div id="recipe-list" class="container d-flex justify-content-evenly flex-wrap  m-auto row p-auto" >
+
+        </div>
+  </div>
+
+  <!-- JavaScript and Bootstrap Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+</html>
