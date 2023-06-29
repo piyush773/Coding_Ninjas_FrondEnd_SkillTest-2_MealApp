@@ -58,9 +58,8 @@ i {
     min-height: 100vh;
 }
 .meal-wrapper{
-    width: 100%;
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 2rem;
     background: #fff;
     text-align: center;
 }
@@ -152,7 +151,6 @@ i {
 
 
 /* Media Queries */
-
 /* CSS styles for screens larger than or equal to 1400px */
 @media screen and (min-width: 1400px) {
     .container-box{
