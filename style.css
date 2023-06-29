@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+}
+
+body{
+      font-weight: 300;
+      font-size: 1.05rem;
+      line-height: 1.6;
+      font-family: 'Poppins', sans-serif;
+}
+
+
+/* Navbar section styling... */
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #ffc107;
+}
+.navbar-brand-name{
+        font-size: larger;
+        font-weight: 800;
+        background: #CF57CB;
+        background: radial-gradient(ellipse farthest-corner at center center, #CF57CB 0%, #FF2441 30%, #FF7C00 62%, #3311BA 0%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+.nav-fav-back-btn {
+        color: #000000;
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-left: 2px;
+        padding-right: 8px;
+        transition: color 0.3s;
+        text-transform: none;
+}
+.nav-fav-back-btn:hover {
+    color: #ff0000; 
+}
+i {
+      color: #ee0606;
+}
+.text{
+      opacity: 0.8;
+}
+.title{
+      font-size: 2rem;
+      margin-bottom: 1rem;
+}
+
+
+/* Search bar section styling */
+.container-box{
+    width: 100%;
+    min-height: 100vh;
+}
+.meal-wrapper{
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    background: #fff;
+    text-align: center;
+}
+.meal-search{
+    margin: 2rem 0;
+}
+.meal-search cite{
+    font-size: 1rem;
+}
+.meal-search-box{
+    margin: 1.2rem 0;
+    display: flex;
+    align-items: stretch;
+}
+.search-control,
+.search-btn{
+    width: 100%;
+}
+.search-control{
+    color: #201f1f;
+    padding: 0 1rem;
+    font-size: 1.1rem;
+    font-family: inherit;
+    outline: 0;
+    border: 1px solid #212529;
+}
+.search-control::placeholder{
+    color: #6e6f70;
+}
+.search-btn{
+    width: 55px;
+    height: 55px;
+    font-size: 1.8rem;
+    background: #2e343a;
+    border: none;
+    transition: all 0.4s linear;
+}
+.search-btn:hover{
+    background: #1c1f22;
+}
+
+
+/* recipe-list and card section styling */
+.recipe-list {
+      margin: auto;
+}
+.card {
+    background: rgba( 255, 255, 255, 0.85 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13px );
+    -webkit-backdrop-filter: blur( 13px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+}
+.btn-warning {
+      background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+      border-radius: 20px;
+      padding: 0.3rem 1.6rem;
+      color: #ffffff!important;
+}
+.btn.active {
+    color: var(--bs-btn-active-color);
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    border-color: var(--bs-btn-active-border-color);
+}
+.food-wid {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+#heading2 {
+      font-family: 'Anton', sans-serif;
+      font-size: 2rem;
+      font-weight: 800;
+      background: rgb(241, 161, 49);
+      background: linear-gradient(90deg, rgba(241, 161, 49, 1) 1%, rgba(244, 149, 44, 1) 30%, rgba(250, 197, 63, 1) 66%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+}
+#recipe-intro{
+      font-weight: lighter!important;
+      word-spacing: 0.2rem;
+}
+
+
+/* Media Queries */
+
+/* CSS styles for screens larger than or equal to 1400px */
+@media screen and (min-width: 1400px) {
+    .container-box{
+       max-width: 1400px;
+       margin: 0 auto;
+    }
+}
+
+ /* CSS styles for screens larger than or equal to 600px */
+@media screen and (min-width: 600px){
+    .meal-search-box{
+        max-width: 540px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .nav-fav-back-btn{
+        display: none;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* :root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-black: #000;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+} */
