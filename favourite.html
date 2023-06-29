@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Your Favorite List</title>
+      <meta name="keywords" content="SavoryBites, Meal App, recipe">
+      <meta name="author" content="Piyush Singh">
+      <!-- link to fontawsome -->
+      <script src="https://kit.fontawesome.com/14097a442a.js" crossorigin="anonymous"></script>
+      <!-- link to bootstrap -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+      <!-- link to css -->
+      <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class= "container-box">
+  <!-- Navigation Bar Section -->
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="assets/logo.png" alt="Logo" width="80" height="40" class="d-inline-block">
+            <span class="navbar-brand-name"> SavoryBites </span>
+          </a>
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a href="javascript:history.back()" style="text-decoration: none;"> <i class="fa-sharp fa-solid fa-arrow-left"> </i> <span class="nav-fav-back-btn"> Back </span> </a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+
+  <!-- Favorite meal list updates container-->
+    <div id="favorite-list" class="container d-flex row justify-content-evenly mt-4 m-auto" >
+
+    </div>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+  <script> showFavMeals(); </script>
+</body>
+</html>
